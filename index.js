@@ -8,12 +8,13 @@ import {
     View,
     StyleSheet,
     Dimensions,
-    Modal,
     Text,
     ScrollView,
     TouchableOpacity,
     Platform
 } from 'react-native';
+
+import ReactNativeModal from 'react-native-modal';
 
 import styles from './style';
 import BaseComponent from './BaseComponent';
@@ -164,9 +165,12 @@ export default class ModalPicker extends BaseComponent {
     render() {
 
         const dp = (
-          <Modal transparent={true} ref="modal" visible={this.state.modalVisible} onRequestClose={this.close} animationType={this.state.animationType}>
-          {this.renderOptionList()}
-          </Modal>
+          <ReactNativeModal 
+            isVisible={this.state.modalVisible} 
+            onModalHide={this.close} 
+            {...this.props}>
+            {this.renderOptionList()}
+          </ReactNativeModal>
         );
 
         return (
