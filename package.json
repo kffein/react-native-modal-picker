@@ -23,6 +23,9 @@
     "react-component"
   ],
   "author": "Daniel Korger <dan@imake.io>",
+   "dependencies": {
+    "react-native-modal": "^2.2.0"
+  },
   "contributors": [
     {
       "name": "Alex Spring",
