@@ -164,11 +164,15 @@ export default class ModalPicker extends BaseComponent {
 
     render() {
 
+      console.log(this.props)
+
         const dp = (
           <ReactNativeModal 
+            backdropColor={'white'}
             isVisible={this.state.modalVisible} 
             onModalHide={this.close} 
-            {...this.props}>
+            {...this.props}
+            >
             {this.renderOptionList()}
           </ReactNativeModal>
         );
