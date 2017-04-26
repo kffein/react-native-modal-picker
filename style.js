@@ -13,9 +13,8 @@ const OPTION_CONTAINER_HEIGHT = 400;
 export default StyleSheet.create({
 
     overlayStyle: {
-        width: width,
-        height: height,
-        backgroundColor: 'rgba(0,0,0,0.7)'
+      width: width,
+      height: height,
     },
 
     optionContainer: {
