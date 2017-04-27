@@ -164,8 +164,6 @@ export default class ModalPicker extends BaseComponent {
 
     render() {
 
-      console.log(this.props)
-
         const dp = (
           <ReactNativeModal 
             backdropColor={'white'}
